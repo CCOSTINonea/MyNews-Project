@@ -76,8 +76,7 @@ Aplicația este formată din mai multe containere Docker care vorbesc între ele
    - Folosește un volum (`news-data`) pentru a salva un fișier JSON cu cele mai recente știri.
 
 4. **LLM1 și LLM2 (containere `llm1` și `llm2`)**
-   - Ambele folosesc imaginea **`ollama/ollama:latest`**.
-   - Se bazează pe modelul `llama3.2:3b` (descărcat în volumul lor `ollama-llm1`, `ollama-llm2`).
+   - Se bazează pe modelul `llama3.2:3b` si `llama3.1:8b` (descărcat în volumul lor `ollama-llm1`, `ollama-llm2`).
    - Gateway-ul le apelează prin API-ul Ollama:
      - `/api/generate` – pentru generarea de text.
 
